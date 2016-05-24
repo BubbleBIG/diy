@@ -1,0 +1,114 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<title>jQuery纵向分类下拉菜单导航DEMO演示</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script type="text/javascript" src="js/jquery-1.7.min.js"></script>
+<link rel="stylesheet" type="text/css" href="css/common.css" />
+<link rel="stylesheet" type="text/css" href="css/b2c_pub.css" />
+</head>
+<body>
+
+<link rel="stylesheet" type="text/css" href="css/b2c.tip.css" />
+
+<div class="header">
+	<!-- <div class="topM sline clearfix">
+ -->
+	<div class="searchBar">
+
+	</div><!-- searchBar end -->
+</div><!-- sline end -->
+<div style="text-align:center;clear:both;">
+<script src="/gg_bd_ad_720x90.js" type="text/javascript"></script>
+<script src="/follow.js" type="text/javascript"></script>
+</div>
+
+</div><!-- header end -->
+<div class="of_whole">
+<!--主体内容区开始-->
+	<div id="of_mainBody" class="push_t">
+		<!--左侧栏开始-->
+		<script>
+		$(document).ready(function() {
+			var OLeft = $(".searchBar").offset().left;
+			var Otop = $(".searchBar").offset().top + $(".searchBar").height() - 3;
+			$("#KsmanDisp").css({left: OLeft,top: Otop});//搜索联想的DIV被幻灯片图片盖住。
+			$("#cardname").addClass("cardnameV");
+			$("#cardname").focus(function() {
+				if ($(this).val() != "") {
+					$(this).removeClass("cardnameV");
+				} else {
+					$(this).addClass("cardnameV");
+				}
+			})
+			$("#cardname").keyup(function() {
+				$(this).removeClass("cardnameV");
+			})
+			$("#cardname").blur(function() {
+				if ($(this).val() != "") {
+					$(this).removeClass("cardnameV");
+				} else {
+					$(this).addClass("cardnameV");
+				}
+			})
+			$(".mainProNav dl dt").mouseover(function() {
+				$(".mainProNav dl").removeClass("dlHover");
+				$(this).parent().addClass("dlHover");
+			})
+			$(".mainProNav").hover(function() {
+				$(this).addClass("mainProNavHover");
+			},function() {
+				$(this).removeClass("mainProNavHover");
+				$(".mainProNav dl").removeClass("dlHover");
+			})
+		});
+		</script>
+		<div class="side_small tag_line float_l">
+			<div class="mainProNav">
+				<dl class="navM1">
+					<dd>
+						<h6><a href="">a1</a></h6>
+					</dd>
+					<dt>A1</dt>
+				</dl>
+				<dl class="navM2">
+					<dd>
+						<a href="">b2</a>
+					</dd>
+					<dt>B2</dt>
+				</dl>
+				<dl class="navM3">
+					<dd>
+						<ul>
+							<li><a href="">c3</a></li>
+						</ul>
+					</dd>
+					<dt>C3</dt>
+				</dl>
+				<dl class="navM4">
+					<dd>
+							<a href="">d4</a>
+						<ul class="hide">
+							<li><a href="">d4</a></li>
+
+						</ul>
+
+					</dd>
+					<dt>D4</dt>
+				</dl>
+				<dl class="navM5">
+					<dd>
+						<ul>
+							<li><a href="">e5</a></li>
+						</ul>
+					</dd>
+					<dt>E5</dt>
+				</dl>
+			</div><!-- mainProNav end -->
+
+</div>
+
+
+
+</body>
+</html>
