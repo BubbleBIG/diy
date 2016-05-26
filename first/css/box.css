@@ -1,0 +1,83 @@
+
+.box{
+    top:20%;
+    width:41%;
+    height: 70%;
+    /*height: 460px;*/
+    margin:auto;
+    margin-left: 4%;
+    margin-top: 2px;
+    padding-left: 3%;
+    /*padding-top: 1%;*/
+    padding-right: 5px;
+    /*height:420px;*/
+    /*border:1px #111 solid;*/
+    display:none;            /* 默认对话框隐藏 */
+    background: #4070a0;
+    /*border-style: groove;*/
+    position: fixed;
+    border-radius: 8px;
+}
+.box.show{display:block;}
+.box .x{
+    /*font-size:18px;*/
+    /*background:  url("../img/close.png")no-repeat center center fixed;*/
+    text-align:right;
+    display:block;
+    padding-right: 2px;
+}
+.add-l input {
+    background: #58626D;
+    /*background: #585858;*/
+    color: #00b3ff;
+    width: 39px;
+    height: 39px;
+    margin: 5px 5px 0 5px;
+    border-style: outset;
+    font-size: 18px;
+    border-radius: 50px;
+
+}
+.add-l input:hover {
+    background: #bbb8cb;
+    color: #ffff00;
+}
+.box input{}
+.title input {
+    width: 50%;
+    height: 3%;
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 7px;
+    border: none;
+}
+.blog textarea {
+    width: 94%;
+    border-radius: 8px;
+    font-size: 20px;
+    padding: 10px;
+}
+.ci button {
+    width: 60px;
+    padding: 4px 6px;
+    font-size: 16px;
+    margin-top: 1px;
+    margin-right: 8px;
+    text-align: center;
+    vertical-align: middle;
+    border: 2px solid transparent;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+    background: #EBEBEB;
+}
+.ci select {
+    width: 101px;
+    height: 30px;
+    margin-top: 8%;
+    font-size: 14px;
+}
+.ci button:hover {
+    background: #00b3ff;
+    color: #fff;
+}

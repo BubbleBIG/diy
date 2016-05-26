@@ -1,0 +1,102 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  /*border: 0;*/
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+
+.card-drop {
+  max-width: 400px;
+  position: relative;
+
+}
+.card-drop a {
+  display: block;
+  width: 100%;
+  /*background-color: salmon;*/
+  padding: 20px 0 20px 20px;
+  height: 60px;
+  text-decoration: none;
+  color: #EEEE00;
+  background-color: #6CA6CD;
+  border-bottom: 1px solid #fff;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+
+.card-drop > a.toggle {
+  position: relative;
+  z-index: 300;
+  -moz-backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-transform-style: preserve-3d;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -moz-transform-origin: 50% 0%;
+  -ms-transform-origin: 50% 0%;
+  -webkit-transform-origin: 50% 0%;
+  transform-origin: 50% 0%;
+  -moz-transition: 0.1s linear;
+  -o-transition: 0.1s linear;
+  -webkit-transition: 0.1s linear;
+  transition: 0.1s linear;
+  background-color: #6CA6CD;
+}
+.card-drop > a.toggle:active {
+  -moz-transform: rotateX(60deg);
+  -webkit-transform: rotateX(60deg);
+  transform: rotateX(60deg);
+}
+.card-drop > a.toggle.active:before {
+  content: "\f0d8";
+}
+.card-drop > a.toggle:before {
+  font-family: 'FontAwesome';
+  content: '\f0d7';
+  font-size: 1.3em;
+  color: #344646;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.3);
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 59px;
+  line-height: 60px;
+  width: 60px;
+  text-align: center;
+  display: block;
+  border-left: 1px solid #4e6a6a;
+}
+.card-drop ul li {
+  /*margin: 0 auto;*/
+  -moz-transition: all, 0.3s ease-out;
+  -o-transition: all, 0.3s ease-out;
+  -webkit-transition: all, 0.3s ease-out;
+  transition: all, 0.3s ease-out;
+  position: absolute;
+  top: 0;
+  z-index: 0;
+  width: 100%;
+  display: block;
+}
+.card-drop ul li a:hover {
+  background-color: #FF00FF;
+  color: #fff;
+}

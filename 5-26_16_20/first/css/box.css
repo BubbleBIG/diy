@@ -1,0 +1,16 @@
+
+.box{
+    width:40%;
+    margin:auto;
+    margin-left: 4%;
+    padding:28px;
+    height:420px;
+    /*border:1px #111 solid;*/
+    display:none;            /* 默认对话框隐藏 */
+    background: #4070a0;
+
+    position: fixed;
+}
+.box.show{display:block;}
+.box .x{ font-size:18px; text-align:right; display:block;}
+.box input{}

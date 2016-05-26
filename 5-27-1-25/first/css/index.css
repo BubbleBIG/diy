@@ -1,0 +1,213 @@
+* {
+    margin: 0;
+    padding: 0;
+    -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+body {
+    /*background: #232323;*/
+    /*background: url('../img/pit_1.jpg') no-repeat;*/
+    /*background-size: 1360px 100%;*/
+    background:#2d3b36 url(../img/pit_1.jpg)no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    padding-top:20px;
+}
+
+.header {
+    height: 65px;
+    width: 100%;
+ }
+.header p {
+    font-size: 50px;
+    color: #fff;
+    text-align: center;
+    padding-top: 20px;
+}
+.input ul li {
+    display: inline-block;
+}
+.clear {
+    float: left;
+    /*position:fixed;*/
+}
+.meu {
+    clear:both;
+}
+.side_small {
+    position: fixed;
+    /*width:336px;*/
+    /*height:280px;*/
+    /*left:50%;*/
+    /*top:50%;*/
+    /*margin-left:-168px;*/
+    /*margin-top:-140px;*/
+}
+/*.pull_left {*/
+    /*float: left;*/
+/*}*/
+.right {
+
+    float: right;
+
+}
+
+.clear {
+     width: 49%;
+     margin-left: 118px;
+ }
+
+.right{
+    width: 27%;
+    margin-right: 4%;
+    height: 390px;
+}
+.mainProNav {
+    border-radius: 6px;
+}
+
+article {
+    margin-bottom: 20px;
+    padding: 15px;
+    /*background-color: #ededed;*/
+    /*border: 0 none;*/
+    border-style:groove;
+    /*border-color:#fff ;*/
+    box-shadow: 0 2px 3px 0 rgba(0,0,0,0.047);
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    height: 600px;
+    border-radius: 12px;
+}
+.right {
+    margin-bottom: 20px;
+    padding: 15px;
+    /*background-color: #ededed;*/
+    border-style:groove;
+    /*border: 0 none;*/
+    box-shadow: 0 2px 3px 0 rgba(0,0,0,0.047);
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 12px;
+
+}
+.blog {
+    margin-top: 20px;
+}
+.left {
+    clear: both;
+}
+
+.form-group input {
+    font-size: 20px;
+    width: 150px;
+    /*right: 269px;*/
+    height: 35px;
+    padding: 5px;
+    margin-left: 15px;
+    /*border: none;*/
+    /*bottom: 10px;*/
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    text-indent: 18px;
+    background: url(../img/search.png) no-repeat 5px white;
+    /*transition-property: width, border-radius;*/
+    /*transition-duration: 1s, 1s*/
+}
+.visitor input {
+    font-size: 15px;
+    width: 160px;
+    /*right: 269px;*/
+    height: 35px;
+    padding: 9px;
+    margin-left: 19px;
+    margin-bottom: 5px;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border: inset;
+}
+.message textarea {
+    font-size: 15px;
+    width: 300px;
+    height: 130px;
+    padding: 9px;
+    margin-left: 5px;
+    margin-bottom: 5px;
+    margin-top: 8px;
+    margin-left: 18px;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border: inset;
+}
+.hhh .btn {
+    padding: 6px 8px;
+    font-size: 19px;
+    font-weight: 400;
+    line-height: 1.2;
+    text-align: center;
+    /*vertical-align: middle;*/
+    border: 2px solid transparent;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    background: #EBEBEB;
+}
+.button2 .btn {
+    width: 60px;
+    height: 30px;
+    padding: 3px ;
+    font-size: 17px;
+    margin-top: 5px;
+    margin-left: 20px;
+    /*font-weight: 300;*/
+    /*line-height: 1.2;*/
+    text-align: center;
+    /*vertical-align: middle;*/
+    border: 2px solid transparent;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+    background: #ABABAB;
+}
+.hhh .btn:hover{
+    background: #b044bd;
+    color: #fff;
+}
+.button2 .btn:hover{
+    background: #76EEC6;
+    color: #fff;
+}
+.info {
+    margin-top: 15px;
+}
+
+.word1 {
+    /*color: #E0FFFF;*/
+    color: #a6e1ec;
+    font-size: 17px;
+    margin-top: 5px;
+    margin-left: 5px;
+    margin-bottom: 5px;
+}
+@media screen and (max-width: 768px) {
+    .right {
+        width: 23%;
+    }
+    .left {
+        width: 46%;
+    }
+}
+@media screen and (max-width: 580px) {
+    .right {
+        width: 20%;
+    }
+    .left {
+        width: 41%;
+    }
+}
